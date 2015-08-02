@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   root :to => "sessions#new"
   resources :users
   resources :sessions
+  resources :pages, only: [:show, :edit, :update, :destroy]
   get 'bord' => 'pages#show', :as => 'bord'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

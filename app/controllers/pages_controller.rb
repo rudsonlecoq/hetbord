@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
 	
-	before_action :require_user, only: [:index, :show]
+	before_action :require_user, only: [:show]
 	def show
+
 	end
 end
